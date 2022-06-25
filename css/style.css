@@ -1,0 +1,328 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background: #222629;
+  position: relative;
+}
+.wrapper{
+  min-height: calc(100vh - 160px);
+  background: #F5F5F5;
+  margin: 80px;
+  
+
+}
+.wrapper-green{
+  background: linear-gradient(to right, #618930 50%, #F5F5F5 50%);
+}
+.wrapper-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-nav-open .wrapper{
+  padding-left: calc(50% - 80px);
+}
+
+.name{
+  position: fixed;
+  top: 43px;
+  left: 80px;
+  color: #FFFFFF;
+}
+.lang{
+  display: flex;
+  position: fixed;
+  top:43px;
+  right: 80px;
+}
+.lang a{
+  color: #FFFFFF;
+}
+.title{
+  font-family: 'Barlow Condensed';
+  font-weight: 700;
+  font-size: 60px;
+  
+}
+.nav-block{
+position: fixed;
+right: 28px;
+top: calc(50vh - 80px - 24px);
+}
+.logo-nav{
+  padding: 10px 0;
+}
+.btn-burger{
+  position: fixed;
+  left: 54px;
+  top: calc(50vh - 24px);
+  background-color: transparent;
+  border: none;
+  z-index: 10;
+}
+.btn-close {
+  position: fixed;
+  left: 6px;
+  top: calc(50vh - 24px);
+  background-color: transparent;
+  border: none;
+}
+.btn-hidden{
+display: none;
+}
+.nav-burger{
+  position: fixed;
+  top: 80px;
+  left: 80px;
+  min-height: calc(100vh - 160px);
+  width: calc(50% - 80px);
+  background: #618930;
+  display: none;
+  
+}
+.nav-burger-show{
+  display: block;
+}
+.content-center{
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 80px;
+}
+.nav-item a ,.info-txt-mail 
+{
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #272822;
+}
+.nav-item{
+  padding: 16px 0;
+}
+.tel{
+  padding: 80px 0;
+}
+.info a{
+  color: #FFFFFF;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.info-txt{
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.info-collaborate{
+  padding-bottom: 16px;
+}
+.title-event{
+  color: #87C232;
+}
+.title-min{
+  font-size: 32px;
+}
+.text{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+}
+.img {
+  max-width: calc(100% - 160px);
+  margin: 0 80px;
+  
+}
+.title-skills{
+  padding-bottom: 15px;
+}
+.text-skills{
+  padding: 16px 0;
+}
+.text-skills a{
+  position: relative;
+}
+.text-skills a::before{
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #618930;
+  position: absolute;
+  left: 520px;
+  top: 9px;
+}
+.title-experience{
+  padding-bottom: 40px;
+}
+.experience{
+  padding: 40px 0;
+}
+.footer{
+  margin: 0 80px 80px;
+}
+.p-color{
+  color: #87C232;
+}
+.mail-color{
+  color: #FFFFFF;
+}
+.info-footer{
+  display: flex;
+ flex-direction:column;
+}
+.info-footer a{
+  align-self: flex-end;
+}
+@media only screen and (min-width: 768px) and (max-width: 1025px){
+  .text-skills a::before{
+    left: 320px;
+  }
+}
+@media only screen and (max-width: 767px){
+
+}
+
+
+
+  
+
+ 
