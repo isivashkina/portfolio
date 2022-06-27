@@ -3,6 +3,8 @@ const btnBurger = document.querySelector('#btn-burger');
 const btnClose = document.querySelector('#btn-close');
 const main = document.querySelector('#main');
 const navBurger = document.querySelector('#nav-burger');
+const wrapperBlack = document.querySelector('#wrapper-black');
+const imgWrapper = document.querySelector('#img-wrapper');
 console.log(btnBurger);
 btnBurger.addEventListener('click', () => {
     console.log('');
@@ -17,6 +19,10 @@ btnClose.addEventListener('click', () => {
     navBurger.classList.remove('nav-burger-show');
     main.classList.remove('main-nav-open');
 
+})
+imgWrapper.addEventListener('click', () => {
+    imgWrapper.classList.add('img-wrapper-hide');
+    wrapperBlack.classList.add('wrapper-black-show');
 })
 
 

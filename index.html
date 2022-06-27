@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-    <div class="main" id="main">
+<div class="main" id="main">
     <div class="wrapper wrapper-green wrapper-center">
         <div class="name">Ilona Suvorova</div>
         <div class="lang">
@@ -39,36 +39,38 @@
                 <nav class="nav-burger" id="nav-burger">
                     <div class="content-center">
                         <ul class="nav-list">
-                            <li class="nav-item"><a href="#">Skills</a></li>
-                            <li class="nav-item"><a href="#">Projects</a></li>
-                            <li class="nav-item"><a href="#">Experience</a></li>
+                            <li class="nav-item"><a href="#skills">Skills</a></li>
+                            <li class="nav-item"><a href="#projects">Projects</a></li>
+                            <li class="nav-item"><a href="#experience">Experience</a></li>
                          </ul>
                         <div class="info tel">
                             <a href="tel:+380936490475">+38 093 649 04 75</a></div>
-                        <p class="info-txt info-collaborate">Want to collaborate?</p>
-                        <p class="info-txt-mail info">email me
-                        <img src="img/pfeill.svg" alt="pfeil">
-                        <a href="mail:ilona4211@gmail.com">ilona4211@gmail.com</a>
-                        </p>
+                            <p class="info-txt info-collaborate">Want to collaborate?</p>
+                        
+                            <div><a class="info-txt-mail info" href="mailto:ilona4211@gmail.com">email me</a>
+                            <img src="img/pfeill.svg" alt="pfeil"></div>
                     </div>
 
                 </nav>
                 
          </div>
     </div> 
+</div>  
     <div class="wrapper">
         <div class="content-center">
         <p class="info-txt title-event">since 2010</p>
-        <h2 class="title title-min">
+        <h2 class="title-min">
             Markup Developer 
         </h2>
         <p class="text">Strong professional focus and personal interest to UI/UX design and Front-End engineering </p>
         </div>
     </div> 
-    <div class="img"><img src="img/Depositphotos_156974368_xl-2015 1.png"></div>
+    <div class="img-wrapper">
+        <div class="paralax img-notebook"></div>
+    </div>
     <div class="wrapper">
         <div class="content-center">
-            <h1 class="title title-skills">SKILLS</h1>
+            <h2 class="title-skills" id="skills">SKILLS</h2>
             <ul class="text-line">
                 <li class="text-skills"><a class="text" href="#">HTML/CSS</a></li>
                 <li class="text-skills"><a class="text" href="#">Responsive layout</a></li>
@@ -80,13 +82,38 @@
             </ul>
         </div>  
     </div> 
-    <div class="img"><img src="img/Rectangle4.png"></div>  
+    <div class="img-wrapper" id="img-wrapper">
+    <img class="img-download" id="projects" src="img/Rectangle4.png">
+    </div>
+    <div class="wrapper wrapper-black" id="wrapper-black">
+        <div class="content-center">
+            <h1 class="title-projects">PROJECTS</h1>
+            <div class="projects">
+                <h2 class="title-min title-white">
+                    Mylib
+                </h2>
+                <p class="text text-white">Component library with html and css code examples</p>
+                <a class="info-txt title-event">gitlab
+                    <img src="img/Vector3.svg" alt="pfeil">
+                </a>
+            </div>
+            <div class="projects">
+                <h2 class="title-min title-white">
+                    Adaptive Layout Example
+                </h2>
+                <p class="text text-white">html page with burger menu</p>
+                <a class="info-txt title-event">gitlab
+                    <img src="img/Vector3.svg" alt="pfeil">
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="content-center">
-            <h1 class="title title-experience">EXPERIENCE</h1>
+            <h1 class="title-experience" id="experience">EXPERIENCE</h1>
             <div class="experience">
                 <p class="info-txt title-event">march 2020 - now</p>
-                <h2 class="title title-min">
+                <h2 class="title-min">
                     epam 
                 </h2>
                 <p class="text">Internship.<br> Deal with HTML/CSS components for design system.</p>
@@ -103,18 +130,14 @@
             </p>
         </div>
     </div> 
-    </div>          
+           
     <footer class="footer">
         <div class="info info-footer">
             <p class="info-txt p-color">Want to collaborate?</p>
             <a href="tel:+380936490475">+38 093 649 04 75</a>
         </div>
-        <p class="info-txt-mail info mail-color">email me
+        <a class="info-txt-mail info mail-color" href="mailto:ilona4211@gmail.com">email me</a>
         <img src="img/pfeil.svg" alt="pfeil">
-        <a href="mail:ilona4211@gmail.com">ilona4211@gmail.com</a>
-        </p>
-    
-
     </footer>
         
 
