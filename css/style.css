@@ -375,7 +375,7 @@ display: block;
 }
 .skill__bar {
   height: 14px;
-  background-color: #cbf29c;
+  background-color: #ecf6e0;
   border-radius: 7px;
   max-width: 680px;
   width: 100%;
@@ -402,25 +402,6 @@ display: block;
     height: 14px;
   }
 }
-/* .text-skills{
-  padding: 16px 0;
-}
-.text-skills a{
-  position: relative;
-}
-.text-skills a::before{
-  content: "";
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #618930;
-  position: absolute;
-  left: 520px;
-  top: 9px;
-} */
-.text-skills a::before :hover{
-  transform: translateX(60px);
-}
 .title-experience{
   padding-bottom: 40px;
 }
@@ -444,9 +425,7 @@ display: block;
   align-self: flex-end;
 }
 @media only screen and (min-width: 768px) and (max-width: 1025px){
-  .text-skills a::before{
-    left: 320px;
-  }
+ 
 }
 @media only screen and (max-width: 767px){
 
