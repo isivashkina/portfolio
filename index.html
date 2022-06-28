@@ -12,10 +12,22 @@
         <div class="lang">
             <a class="" href="#">EN</a>
             <a class="" href="#">UA</a>
-        </div>            
+        </div> 
+        <div class="first__title">         
         <h1 class="title">
             GREEN BUILD <br>IS THE NEW BLACK
         </h1>
+        </div>>
+        <div class="first__page">
+        <div class="content-center welcome__page_content">
+            <div class="title-content"><p class="info-txt title-event">since 2022</p>
+            <h2 class="title-min">
+                Markup Developer 
+            </h2>
+            </div>
+            <p class="text">Strong professional focus<br> and personal interest<br>Front-End engineering </p>
+            </div>  
+        </div>
         <div class="nav-block">  
             <div class="logo-nav"><a class="logo" href="#"><img class="logo-img" src="img/Vector.svg" alt="linkedin"></a></div>
             <div class="logo-nav"><a class="logo" href="#"><img class="logo-img" src="img/facebook.svg" alt="facebook"></a></div>
@@ -56,30 +68,54 @@
          </div>
     </div> 
 </div>  
+<div class="img-wrapper">
+    <div class="paralax"></div>
+</div>
     <div class="wrapper">
-        <div class="content-center">
-        <p class="info-txt title-event">since 2010</p>
-        <h2 class="title-min">
-            Markup Developer 
-        </h2>
-        <p class="text">Strong professional focus and personal interest to UI/UX design and Front-End engineering </p>
-        </div>
-    </div> 
-    <div class="img-wrapper">
-        <div class="paralax img-notebook"></div>
-    </div>
-    <div class="wrapper">
-        <div class="content-center">
-            <h2 class="title-skills" id="skills">SKILLS</h2>
-            <ul class="text-line">
-                <li class="text-skills"><a class="text" href="#">HTML/CSS</a></li>
-                <li class="text-skills"><a class="text" href="#">Responsive layout</a></li>
-                <li class="text-skills"><a class="text" href="#">Bootstrap</a></li>
-                <li class="text-skills"><a class="text" href="#">jQuery</a></li>
-                <li class="text-skills"><a class="text" href="#">CSS Preprocessors</a></li>
-                <li class="text-skills"><a class="text" href="#">gulp</a></li>
-                <li class="text-skills"><a class="text" href="#">Git</a></li>
-            </ul>
+        <div class="content-center skills-block" id="skills">
+            <h2 class="title-skills">SKILLS</h2>
+            <div class="skill">
+                <span class="text">HTML/CSS</span>
+                <div class="skill__bar">
+                    <div class="skill__bar_per" style="width: 95%"></div>
+                </div>  
+            </div>
+            <div class="skill">
+                <span class="text">Responsive layout</span>
+                <div class="skill__bar">
+                    <div class="skill__bar_per" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="text">Bootstrap</span>
+                <div class="skill__bar">
+                    <div class="skill__bar_per wow" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="text">jQuery</span>
+                <div class="skill__bar">
+                    <div class="skill__bar_per wow" style="width: 60%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="text">CSS Preprocessors</span>
+                <div class="skill__bar">
+                    <div class="skill__bar_per" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="text">gulp</span>
+                <div class="skill__bar">
+                    <div class="skill__bar_per" style="width: 60%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="text">Git</span>
+                <div class="skill__bar">
+                    <div class="skill__bar_per" style="width: 85%"></div>
+                </div>
+            </div>
         </div>  
     </div> 
     <div class="img-wrapper" id="img-wrapper">
@@ -112,22 +148,27 @@
         <div class="content-center">
             <h1 class="title-experience" id="experience">EXPERIENCE</h1>
             <div class="experience">
-                <p class="info-txt title-event">march 2020 - now</p>
+                <p class="info-txt title-event">july 2022 - now</p>
                 <h2 class="title-min">
-                    epam 
+                    IT school Hillel 
                 </h2>
-                <p class="text">Internship.<br> Deal with HTML/CSS components for design system.</p>
+                <p class="text">Front-end pro course</p>
+                <p class="info-txt title-event">certificate
+                    <img src="img/Vector3.svg" alt="pfeil">
+                </p>
             </div>
+           
             <div class="experience">
-                <p class="info-txt title-event">december 2019 - march 2020</p>
+                <p class="info-txt title-event">april 2022 - june 2022</p>
                 <h2 class="title title-min">
-                    IT school Hillel Front-end
+                    IT school Hillel
                 </h2>
                 <p class="text">Front-end basic course.</p>
+                <p class="info-txt title-event">certificate
+                    <img src="img/Vector3.svg" alt="pfeil">
+                </p>
             </div>
-            <p class="info-txt title-event">certificate
-                <img src="img/Vector3.svg" alt="pfeil">
-            </p>
+            
         </div>
     </div> 
            
@@ -140,7 +181,21 @@
         <img src="img/pfeil.svg" alt="pfeil">
     </footer>
         
-
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        var windowHeight = $(window).height();
+        $(document).on('scroll', function() {
+            $('.skills-block').each(function() {
+            var self = $(this),
+                height = self.offset().top + self.height() / 2 - windowHeight / 2;
+            if ($(document).scrollTop() >= height) {
+                self.addClass('active');
+            }
+            });
+        });
+        });
+    </script>
     <script src="css/index.js"></script>
     </body>
 </html>
