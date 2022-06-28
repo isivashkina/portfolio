@@ -5,12 +5,14 @@ const main = document.querySelector('#main');
 const navBurger = document.querySelector('#nav-burger');
 const wrapperBlack = document.querySelector('#wrapper-black');
 const imgWrapper = document.querySelector('#img-wrapper');
+const navSkills = document.querySelector('#nav-skills');
 
 btnBurger.addEventListener('click', () => {
     btnBurger.classList.add('btn-hidden');
     btnClose.classList.remove('btn-hidden');
     navBurger.classList.add('nav-burger-show');
     main.classList.add('main-nav-open');
+
 })
 btnClose.addEventListener('click', () => {
     btnClose.classList.add('btn-hidden');
@@ -19,6 +21,7 @@ btnClose.addEventListener('click', () => {
     main.classList.remove('main-nav-open');
 
 })
+
 imgWrapper.addEventListener('click', () => {
     imgWrapper.classList.add('img-wrapper-hide');
     wrapperBlack.classList.add('wrapper-black-show');

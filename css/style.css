@@ -161,19 +161,29 @@ body{
 }
 
 .name{
-  position: fixed;
-  top: 43px;
+  position: absolute;
+  top: -43px;
   left: 80px;
   color: #FFFFFF;
 }
 .lang{
   display: flex;
-  position: fixed;
-  top:43px;
+  position: absolute;
+  top: -43px;px;
   right: 80px;
 }
 .lang a{
   color: #FFFFFF;
+}
+.lang a.active{
+  color: #618930;
+}
+.lang-en{
+  border-right: 1px solid #FFFFFF;
+  padding-right: 10px;
+}
+.lang-ua{
+padding-left: 10px;
 }
 .nav-block{
 position: fixed;
@@ -182,6 +192,14 @@ top: calc(50vh - 80px - 24px);
 }
 .logo-nav{
   padding: 10px 0;
+}
+.container{
+  position: absolute;
+  top: 0;
+  left: 0;
+width: 80px;
+height: calc(100vh - 80px);
+background: #222629;;
 }
 .btn-burger{
   position: absolute;
@@ -238,7 +256,6 @@ position: absolute;
     transform: translateX(100%);
   }
 }
- 
 .first__page {
   position: absolute;
   top: 0;
