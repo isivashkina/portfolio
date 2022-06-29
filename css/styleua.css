@@ -127,7 +127,7 @@ table {
   border-spacing: 0;
 }
 :root {
-  --main-bg-color: #618930;
+  --main-bg-color: #61893096;
 }
 a{
   text-decoration: none;
@@ -228,7 +228,7 @@ display: none;
   left: 80px;
   min-height: calc(100vh - 160px);
   width: calc(50% - 80px);
-  background: var(--main-bg-color);
+  background: #618930;
   display: none;
   
 }
