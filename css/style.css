@@ -186,28 +186,35 @@ body{
   padding-right: 10px;
 }
 .lang-ua{
-padding-left: 10px;
+  padding-left: 10px;
+}
+.lang-en:hover, .lang-ua:hover{
+  transform: scale(1.2);
 }
 .nav-block{
 position: fixed;
 right: 28px;
-top: calc(50vh - 80px - 24px);
+top: calc(50vh - 50px - 24px);
 }
 .logo-nav{
   padding: 10px 0;
+}
+.logo-nav:hover, .btn-burger:hover, .btn-close:hover{
+  transform: rotate(360deg) scale(1.2);
+  transition: all 0.3s linear 0s;
 }
 .container{
   position: absolute;
   top: 0;
   left: 0;
-width: 80px;
-height: calc(100vh - 80px);
-background: #222629;;
+  width: 80px;
+  height: calc(100vh - 80px);
+  background: #222629;;
 }
 .btn-burger{
   position: absolute;
   left: 54px;
-  top: calc(50vh - 120px);
+  top: calc(50vh - 110px);
   background-color: transparent;
   border: none;
   z-index: 10;
@@ -215,7 +222,7 @@ background: #222629;;
 .btn-close {
   position: absolute;
   left: 6px;
-  top: calc(50vh - 120px);
+  top: calc(50vh - 110px);
   background-color: transparent;
   border: none;
 }
@@ -306,7 +313,7 @@ display: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 80px 0 80px;
+  margin: 0 80px;
 }
 .title-content{
   padding-bottom: 20px;
@@ -369,6 +376,7 @@ display: none;
 
 .img-download{
   width: 100%;
+  height: 100%;
 }
 .paralax{
   background: url("../img/Depositphotos_156974368_xl-2015\ 1.png");
@@ -470,12 +478,17 @@ display: block;
 .info-footer a{
   align-self: flex-end;
 }
-@media only screen and (min-width: 768px) and (max-width: 1025px){
- 
-}
+
 @media only screen and (max-width: 767px){
+    h1,h2,h3,h4,h5,h6{
+    font-size: 30px;
+  }
+
     .nav-burger {
         width: calc(100% - 160px);
+    }
+    .content-center{
+      margin: 0 40px;
     }
     .skill{
       display: block;
